@@ -2,7 +2,6 @@ package com.example.vaultdemo.b_properties;
 
 import org.springframework.stereotype.Component;
 
-// @Component
 public class ABExample {
 
     public static final double MARGIN_PERCENTAGE = 1.10;

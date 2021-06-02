@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Data
-@Configuration
+//@Configuration
 @ConfigurationProperties
 public class MyProps {
 

@@ -19,8 +19,8 @@ public class EBExample {
 @Configuration
 @ConfigurationProperties("eb.financial.percentage")
 class EBConfiguration {
-    private double margin = 1.10;
-    private Vat vat = new Vat(1.21, 1.06);
+    double margin = 1.10;
+    Vat vat = new Vat(1.21, 1.06);
 
     @Data
     @NoArgsConstructor

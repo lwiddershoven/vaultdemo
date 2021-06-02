@@ -3,7 +3,7 @@ package com.example.vaultdemo.b_properties;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-// @Component
+@Component
 public class BBExample {
 
     @Value("${financial.percentage.margin}")
