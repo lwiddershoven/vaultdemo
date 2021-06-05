@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
 import java.time.Duration;
@@ -15,6 +16,7 @@ public class EBExample {
 
 // Structure
 
+@Profile("ebexample")
 @Data
 @Configuration
 @ConfigurationProperties("eb.financial.percentage")
@@ -26,7 +28,7 @@ class EBConfiguration {
     @NoArgsConstructor
     @AllArgsConstructor
     static class Vat {
-        double high;
+        double high; // eb.financial.percentage.vat.high
         double low;
     }
 }
