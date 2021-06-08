@@ -45,6 +45,8 @@ class EBRequestConfigConfiguration {
     Duration connectTimeout; // format: PT1.5S == 1500  = 1.5s
     Duration requestTimeout;
 
+    Proxy proxy = new Proxy();
+
     @Data
     static class Proxy {
         boolean enabled = false;
