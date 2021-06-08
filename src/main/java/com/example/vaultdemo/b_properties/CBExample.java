@@ -13,7 +13,7 @@ import javax.annotation.PostConstruct;
 @Component
 public class CBExample {
 
-    @Value("${financial.percentage.margin:1.1}")
+    @Value("${financial.percentage.margin}")
     private double marginPercentage; // value here does not matter
 
     @Value("${financial.percentage.vat.high:1.21}") // with a default value
