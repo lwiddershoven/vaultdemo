@@ -13,7 +13,8 @@ public class DBExample {
 
     public DBExample(DBConfiguration config) {
         this.config = config;
-        System.out.println("Margin percentage: " + config.getMargin() + " vat " + config.getVatHigh());
+        System.out.println("Margin percentage: "
+                + config.getMargin() + " vat " + config.getVatHigh());
     }
 
     public long computePrice(long purchasePriceInCents) {
